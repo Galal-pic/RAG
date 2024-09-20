@@ -22,3 +22,8 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 set your environment variables in the `.env` file. Like `Gemini_key`
+
+## run the FastAPI server
+```bash
+uvicorn main:app --reload  --port 5000
+```
