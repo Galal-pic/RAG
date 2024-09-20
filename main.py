@@ -1,6 +1,8 @@
 from fastapi import FastAPI
-app  = FastAPI()
+from dotenv import load_dotenv
+load_dotenv('.env')
 
-@app.get('/welcome')
-def welcome():
-    return {"message": "Welcome to the FastAPI microservice!"}
+from routs import base
+
+app  = FastAPI()
+app.include_router(base.base_router)
