@@ -27,3 +27,11 @@ set your environment variables in the `.env` file. Like `Gemini_key`
 ```bash
 uvicorn main:app --reload  --port 5000
 ```
+## run Dpocker Compose server
+```bash
+cd docker
+cp .env.example .env
+```
+
+- update .env with your credntials
+
